@@ -15,8 +15,8 @@ import java.util.List;
 public class NelioTest {
 
     private static Laskin laskin = new Laskin();
-    private int luku;
-    private int tulos;
+    private double luku;
+    private double tulos;
 
     @Parameters
     public static List testiTapaukset() {
@@ -34,7 +34,7 @@ public class NelioTest {
     // Konstruktori, jota JUnit kutsuu kullekin listan testitapaukselle.
     // Parametrien kytkentä sijainnin / järjestyksen perusteella:
     // ekana syötetty luku, toisena odotettu arvo
-    public NelioTest(int luku, int tulos) {
+    public NelioTest(double luku, double tulos) {
         this.luku = luku;
         this.tulos = tulos;
     }
